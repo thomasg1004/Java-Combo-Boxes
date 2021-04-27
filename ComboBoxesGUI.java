@@ -6,8 +6,7 @@ public class ComboBoxesGUI extends JPanel {
 	private JLabel lblName, lblDegree;
 	private JTextField txtName;
 	private JComboBox cboInfo;
-	private String[] personalInfo = {"Doctorate", 
-									"Master", "Bachelor"};
+	private String[] personalInfo = {"Doctorate", "Master", "Bachelor"};
 	private JLabel lblOutput;
 
 	public ComboBoxesGUI()
@@ -59,20 +58,14 @@ public class ComboBoxesGUI extends JPanel {
 			
 			switch(selection)
 			{	// Doctorate
-			case 0: output += " going for the top " +
-								"degree I see: " + 
-								personalInfo[selection];
+			case 0: output += " going for the top " + "degree I see: " + personalInfo[selection];
 					break;
 					
 				// Master
-			case 1: output += " good decision that " + 
-								"you are doing this: " +
-								personalInfo[selection];
+			case 1: output += " good decision that " + "you are doing this: " + personalInfo[selection];
 					break;
 				// Bachelor
-			case 2: output += " go and get that " + 
-								"degree now: " + 
-								personalInfo[selection];
+			case 2: output += " go and get that " + "degree now: " + personalInfo[selection];
 					break;
 					
 			default: output += "Error! Unknown degree!";
